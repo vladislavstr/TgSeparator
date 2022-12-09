@@ -6,6 +6,5 @@
         InGroup,
         PassedSurvey,
         InTeam,
-        AddTestLine
     }
 }

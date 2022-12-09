@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SeparatorIntoGroup.Options;
 
 namespace SeparatorIntoGroup
 {
-    internal class Student
+    internal class Student: AbstractPersons
     {
+        public StatusType Status { get; protected set; }
+
+        public override void Writeinfo()
+        {
+            Console.WriteLine($"{Status}");
+        }
     }
 }
