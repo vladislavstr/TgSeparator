@@ -2,13 +2,14 @@
 
 namespace SeparatorIntoGroup
 {
-    internal class Student: AbstractPersons
+    public class Student: AbstractPersons
     {
-        public StatusType Status { get; protected set; }
-
-        public override void Writeinfo()
+        public Student(string name, int id, string accaunt)
         {
-            Console.WriteLine($"{Status}");
+            NamePersons = name;
+            Id = id;
+            Accaunt = accaunt;
+            Status = StatusType.NotInGroup;
         }
     }
 }

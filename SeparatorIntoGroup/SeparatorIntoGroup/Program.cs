@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using SeparatorIntoGroup;
+
+Teacher a = new Teacher("AAA", 1, "dfd");
+
+a.Writeinfo();

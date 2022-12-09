@@ -6,5 +6,6 @@
         InGroup,
         PassedSurvey,
         InTeam,
+        IsTeacher
     }
 }

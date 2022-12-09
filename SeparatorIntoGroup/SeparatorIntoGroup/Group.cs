@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SeparatorIntoGroup
+﻿namespace SeparatorIntoGroup
 {
-    internal class Group
+    public class Group
     {
+        public int Id { get; set; }
+        public string NameGroup { get; set; }
+
+        public List<Student> StudentsInGroup { get; set; }
+        public List<Team> TeamsInGroup { get; set; }
+        public Group(int id, string name)
+        {
+            Id = id;
+            NameGroup = name;
+            StudentsInGroup = new List<Student>();
+            TeamsInGroup = new List<Team>();
+        }
     }
 }
